@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: echo a string
         run: echo "Hellow World"
-      - name: multiple git  scripts
+      - name: multiple git scripts
         run: |
           node -v
           npm -v
@@ -19,6 +19,7 @@ jobs:
         shell: python
   run-windows-commands:
     runs-on: windows-latest
+    needs: ['run-shell-command']
     steps:
       - name: Directory PowerShell
         run: Get-Location

@@ -15,5 +15,5 @@ jobs:
       - name: python
         run: |
           import platform
-          print(platform.procesor())
+          print(platform.processor())
         shell: python

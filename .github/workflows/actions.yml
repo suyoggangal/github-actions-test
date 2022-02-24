@@ -12,4 +12,4 @@ jobs:
         with:
           who-to-greet: Suyog Gangal
       - name: log greeting
-        run: echo "{{steps.greet.outputs.time}}"
+        run: echo "${{steps.greet.outputs.time}}"
